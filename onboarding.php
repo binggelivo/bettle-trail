@@ -7,14 +7,14 @@ include 'header.php';
         <p>Erlebe den Bettle-Trail mit deinem Smartphone. Bist du der schnellste, der den Parkour löst?</p>
         <div>
             <label for="groupname">Euer Gruppenname oder dein Name:</label><br>
-            <input type="text" id="groupname" name="groupname"><br><br>
+            <input type="text" id="groupname" name="groupname"><br>
             <label for="gruppenbild">Euer Gruppenbild oder dein Profilbild:</label><br>
             <label for="gruppenbild" class="fileupload">Bild auswählen</label>
-            <input type="file" id="gruppenbild" name="gruppenbild" accept="image/*" /><br><br>
+            <input type="file" id="gruppenbild" name="gruppenbild" accept="image/*" /><br>
             <input type="checkbox" id="private" name="private" value="privat">
-            <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br><br>
+            <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br>
             <button class="button" onclick="onboarding()">Starten</button>
-            <scrip>
+            <script>
                 function onboarding(){
                     var photo = document.getElementById("gruppenbild");
                     var name = document.getElementById("groupname").value
@@ -28,7 +28,7 @@ include 'header.php';
                     xmlhttp.open("POST", "ajaxpost.php");
                     xmlhttp.send(data);
                 }
-            </scrip>
+            </script>
         </div>
     </div>
 </div>
