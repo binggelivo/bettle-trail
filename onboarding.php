@@ -25,7 +25,7 @@ include 'header.php';
                     data.append('privat', document.getElementById("private").checked);
 
                     var xmlhttp=new XMLHttpRequest()
-                    xmlhttp.open("POST", "bilder.php");
+                    xmlhttp.open("POST", "backend/bilder.php");
                     xmlhttp.send(data);
                 }
             </script>
