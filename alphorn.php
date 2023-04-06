@@ -12,7 +12,7 @@ Die Kunst des Alphornspiels liegt in der schnellen und präzisen
 Veränderung der Lippenspannung.
             </p>
             <br>
-            <img src="img/alphorn/noten.webp" alt="Decodier Pyramiede für Morsecode">
+            <img src="img/alphorn/noten.webp" width="100%" alt="Decodier Pyramiede für Morsecode">
             <p>Früher wurden Tannen verwendet, welche an einem steilen Hang
 krumm gewachsen sind, siehe Foto.<br>
 Die Bearbeitung erfolgte von Hand und benötigte ca. 80
@@ -65,7 +65,7 @@ Das vorwiegend in der Schweiz geblasene Alphorn hat eine Länge von
             </div>
         </div>
         <div class="block50 block beige rounded">
-            <img src="img/alphorn.webp" class="vlogo"><br>
+            <img src="img/alphorn.webp" alt="Logo Alphorngruppe Echo vom Jura" class="vlogo"><br>
             <h1>Alphorngruppe Echo vom Jura</h1>
             <p><b>Willkommen bei der Alphorngruppe „Echo vom Jura“</b><br>
 Die Alphorngruppe „Echo vom Jura“ besteht seit 2010.<br>

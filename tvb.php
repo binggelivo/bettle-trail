@@ -61,7 +61,7 @@ Viel Glück!</p>
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/turnverein.webp" class="vlogo"><br>
+        <img src="img/turnverein.webp" alt="Logo Turnverein Bettlach" class="vlogo"><br>
             <h1>Turnverein Bettlach</h1>
             <p>Der TV Bettlach ist mit über 250 Erwachsenen und über 150
 Jugendlichen der grösste Verein im Dorf und bildet eine wichtige

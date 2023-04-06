@@ -56,7 +56,7 @@ ______ läufst. Vor der __________ geht es _________.
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/pfadi.webp" class="vlogo"><br>
+        <img src="img/pfadi.webp" alt="Logo Pfadi Bettlach" class="vlogo"><br>
             <h1>Pfadi Bettlach</h1>
             <p>Willst du Jahrgangübergreifende Freundschaften schliessen?<br>
 Möchtest du draussen und drinnen spannende Abenteuer erleben?<br>

@@ -62,7 +62,7 @@ Dann ist ja alles klar, wo der nächste Posten sein wird.
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/shc.webp" class="vlogo"><br>
+        <img src="img/shc.webp" alt="Logo SHC Bettlach" class="vlogo"><br>
             <h1>Strassenhockeyclub Bettlach</h1>
             <p>Der SHC Bettlach wurde am 21. Januar 1993 im Restaurant Marti in
 Bettlach gegründet und feiert in diesem Jahr bereits sein 30-jähriges

@@ -65,7 +65,7 @@ Ringwert 9 = Treppe<br>
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/schutzen.webp" class="vlogo"><br>
+        <img src="img/schutzen.webp" alt="Logo Schützen Bettlach" class="vlogo"><br>
             <h1>Schützengesellschaft Bettlach</h1>
             <p>Die Schützengesellschaft Bettlach wurde 1833 gegründet. Bei uns
 kann man mit dem Gewehr auf einer Distanz von 300m und auch

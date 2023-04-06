@@ -106,7 +106,7 @@ include 'header.php';
     </div>
   </div>
   <div class="block50 block beige rounded">
-    <img src="img/boogianer.webp" class="vlogo"><br>
+    <img src="img/boogianer.webp" alt="Logo Böögianer" class="vlogo"><br>
     <h1>Böögianer Bettlach</h1>
     <p>Die Böögianer sind eine Fasnachtszunft, welche den Böög bauen und
       das Böögverbrennen durchführen. Gegründet wurden die Böögianer

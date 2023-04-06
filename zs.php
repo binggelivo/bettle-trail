@@ -73,7 +73,7 @@ Ersetze die ersten drei Ziffern der Lösungszahl durch die Buchstaben.
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/zs.webp" class="vlogo"><br>
+        <img src="img/zs.webp" alt="Logo Zähnteschür Bettlach" class="vlogo"><br>
             <h1>Pfadi Bettlach</h1>
             <p>Die Schür wurde 1611 erstmals erwähnt. Die verfallene Zähnteschür
 sollte aber, obwohl seit 1941 unter Schutz gestellt (im „Inventar

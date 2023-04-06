@@ -56,7 +56,7 @@ include 'header.php';
     </div>
   </div>
   <div class="block50 block beige rounded">
-    <img src="img/ogv.webp" class="vlogo"><br>
+    <img src="img/ogv.webp" alt="Logo Obst- und Gartenbauverein" class="vlogo"><br>
     <h1>Obst- und Gartenbauverein</h1>
     <p>Herzlich willkommen beim OGV Bettlach!<br>
 OGV, das steht für Obst- und Gartenbauverein und dieses Jahr dürfen

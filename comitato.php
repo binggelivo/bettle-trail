@@ -66,7 +66,7 @@ include 'header.php';
     </div>
   </div>
   <div class="block50 block beige rounded">
-    <img src="img/comitato.webp" class="vlogo"><br>
+    <img src="img/comitato.webp" alt="Logo Comitato" class="vlogo"><br>
     <h1>Comitato Genitori Bettlach</h1>
     <p>Der Comitato Genitori Bettlach wurde vor ca. 44 Jahren von
       italienischen Einwohnern in Bettlach gegründet.<br>

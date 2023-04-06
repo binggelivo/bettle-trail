@@ -61,7 +61,7 @@ b) Schnecke ➪ Richtung Dorfmuseum Adamhaus<br>
             </div>
         </div>
         <div class="block50 block beige rounded">
-            <img src="img/spielgruppe.webp" class="vlogo"><br>
+            <img src="img/spielgruppe.webp" alt="Logo Spielgruppenverein Bettlach" class="vlogo"><br>
             <h1>Spielgruppenverein</h1>
             <p>Der Spielgruppenverein Bettlach stellt sich vor<br><br>
 Der Spielgruppenverein Bettlach stellt sich aus 9
