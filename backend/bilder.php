@@ -10,24 +10,23 @@ $dbname = "binggeli_bettle-trail";
 
 if (isset($_POST["art"])){
     if ($_POST["art"] == "onboarding"){
-        $target_dir = "uploads/";
-        $target_file = $target_dir . basename($_FILES["photo"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        print_r(basename($_FILES["photo"]["name"]));
-        echo "<br><br>";
-        print_r(strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)));
-        echo "<br><br>";
-        $time = time();
-        echo "<br><br>";
-        print_r($time);
-        echo "<br><br>"; 
-        print_r(basename($time . "." . strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION))));
-        echo "<br><br>";
-        if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)) {
-            echo "The file ". htmlspecialchars( basename( $_FILES["photo"]["name"])). " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
+        if (($_FILES['photo']['name']!="")){
+        // Where the file is going to be stored
+            $target_dir = "upload/";
+            $file = $_FILES['photo']['name'];
+            $path = pathinfo($file);
+            $filename = $path['filename'];
+            $ext = $path['extension'];
+            $temp_name = $_FILES['photo']['tmp_name'];
+            $path_filename_ext = $target_dir. time() .".".$ext;
+            
+        // Check if file already exists
+        if (file_exists($path_filename_ext)) {
+                echo "Sorry, file already exists.";
+            }else{
+                move_uploaded_file($temp_name,$path_filename_ext);
+                echo "Congratulations! File Uploaded Successfully.";
+            }
         }
         echo "<br><br>";
         $conn = new mysqli($servername, $username, $password, $dbname);
