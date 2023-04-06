@@ -12,7 +12,7 @@ if (isset($_POST["art"])){
     if ($_POST["art"] == "onboarding"){
         if (($_FILES['photo']['name']!="")){
         // Where the file is going to be stored
-            $target_dir = "upload/";
+            $target_dir = "uploads/";
             $file = $_FILES['photo']['name'];
             $path = pathinfo($file);
             $filename = $path['filename'];
