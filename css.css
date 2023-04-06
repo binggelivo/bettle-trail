@@ -290,7 +290,7 @@ input[type="checkbox"]:checked::before {
   }
 
 .button:hover {
-    backgroud-color: #226b44;
+    background-color: #226b44;
 }
 
 .accordioncontainer {

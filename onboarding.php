@@ -15,16 +15,20 @@ include 'header.php';
             <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br>
             <button class="button" onclick="onboarding()">Starten</button>
             <script>
-                function onboarding(){
+                document.getElementById("gruppenbild").addEventListener("change", function() {
+                    document.getElementsByClassName("fileupload")[0].innerHTML = document.getElementById("gruppenbild").files.item(0).name;
+                })
+
+                function onboarding() {
                     var photo = document.getElementById("gruppenbild");
                     var name = document.getElementById("groupname").value
-                    var data=new FormData();
+                    var data = new FormData();
                     data.append('art', "onboarding");
-                    data.append('photo',photo.files[0]);
+                    data.append('photo', photo.files[0]);
                     data.append('groupname', name);
                     data.append('privat', document.getElementById("private").checked);
 
-                    var xmlhttp=new XMLHttpRequest()
+                    var xmlhttp = new XMLHttpRequest()
                     xmlhttp.open("POST", "backend/bilder.php");
                     xmlhttp.send(data);
                 }
