@@ -1,10 +1,10 @@
 <?php 
-echo $_POST["points"];
+echo "neue: " . $_POST["points"];
 echo "<br>";
-echo htmlspecialchars($_SESSION["points"]);
+echo "vorher: " . htmlspecialchars($_SESSION["points"]);
 if ($_POST["points"]){
     $_SESSION["points"] = htmlspecialchars($_SESSION["points"]) + $_POST["points"];
 }
 echo "<br>";
-echo htmlspecialchars($_SESSION["points"]);
+echo "jetzt: " . htmlspecialchars($_SESSION["points"]);
 ?>
