@@ -14,9 +14,10 @@ if (isset($_POST["art"])){
         echo "<br><br>";
         print_r(strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)));
         echo "<br><br>";
-        /*if (move_uploaded_file($_FILES["photo"]["tmp_name"], "uploads/" . microtime())){
-
-        }*/
+        $time = microtime();
+        if (move_uploaded_file($_FILES["photo"]["tmp_name"], "uploads/" . $time . "." . strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)))){
+            echo "itwork";
+        }
         $conn = new mysqli($servername, $username, $password, $dbname);
         $sql = "INSERT INTO user (user_startpic, user_name, user_private)
         VALUES ( '" . "', '" . $_POST["groupname"] . "', " . $_POST["privat"] . ");";
