@@ -1,7 +1,5 @@
 <?php
 include 'header.php';
-
-echo $_SESSION["grouid"];
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -31,7 +29,8 @@ echo $_SESSION["grouid"];
         <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br>
       <?php } ?>
       <button class="button" onclick="sendzs()">Senden</button>
-      <script>
+    </div>
+    <script>
         document.getElementById("zsbild").addEventListener("change", function() {
           document.getElementsByClassName("fileupload")[0].innerHTML = document.getElementById("zsbild").files.item(0).name;
         })
@@ -50,17 +49,17 @@ echo $_SESSION["grouid"];
           var xmlhttp = new XMLHttpRequest()
           xmlhttp.open("POST", "backend/bilder.php");
           xmlhttp.send(data);
-
+          document.getElementById("zsform").innerHTML = "<rot>Wir laden die Daten hoch ...</rot>";
           xmlhttp.onload = () => {
             if (xmlhttp.status == 200) {
-              document.getElementById("zsform").innerHTML = "<p class=\"red\">Wurde erfolgreich gesendet</p>";
+              document.getElementById("zsform").innerHTML = "<rot>Wurde erfolgreich gesendet</rot>";
             } else {
-              document.getElementById("zsform").innerHTML = "<p class=\"red\">Leider ist ein Fehler aufgetreten. Falls du trotzdem teilnehmen möchtest, kannst du das Foto an <a href=\"mailto:foto@bettle-trail.ch\">foto@bettle-trail.ch</a> senden.</p>";
+              document.getElementById("zsform").innerHTML = "<rot>Leider ist ein Fehler aufgetreten. Falls du trotzdem teilnehmen möchtest, kannst du das Foto an <a href=\"mailto:foto@bettle-trail.ch\">foto@bettle-trail.ch</a> senden.</rot>";
             }
           };
         }
       </script>
-    </div><br>
+      <br>
     <p><b>Einsendeschluss: 15. August 2023.</b><br><br>
       Unter den richtigen Lösungszahlen erkürt der Vorstand die drei
       kreativsten und schönsten Fotos.
@@ -76,21 +75,21 @@ echo $_SESSION["grouid"];
     </p>
     <br><br>
     <div class="accordioncontainer">
-      <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
 
-      <button class="accordion">Tipp 2 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
 
-      <button class="accordion">Tipp 3 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
-      <button class="accordion">Lösung - <rot>keine Punkte</rot></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>

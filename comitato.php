@@ -25,21 +25,21 @@ include 'header.php';
     </p>
     <br><br>
     <div class="accordioncontainer">
-      <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
 
-      <button class="accordion">Tipp 2 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
 
-      <button class="accordion">Tipp 3 - <rot>minus 20 Punkte</rot></button>
+      <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
-      <button class="accordion">Lösung - <rot>keine Punkte</rot></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
