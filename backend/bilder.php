@@ -14,7 +14,7 @@ if (isset($_POST["art"])){
         echo "<br><br>";
         print_r(strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)));
         echo "<br><br>";
-        $time = microtime();
+        $time = microtime(true);
         print_r($time);
         print_r(basename($time . "." . strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION))));
         move_uploaded_file($_FILES["photo"]["tmp_name"], "uploads/" . basename($time . "." . strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION))));
