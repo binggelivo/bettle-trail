@@ -45,7 +45,7 @@ if (isset($_POST["art"])) {
         $conn->close();
     }
 
-    if ($_POST["zsupload"]) {
+    if ($_POST["art"] == "zsupload") {
         if (($_FILES['photo']['name'] != "")) {
             $target_dir = "../uploads/";
             $file = $_FILES['photo']['name'];

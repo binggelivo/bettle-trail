@@ -18,37 +18,46 @@ echo $_SESSION["grouid"];
       Frage 4: Wie viele Anlässe „i dr Schür“ organisiert der
       Zähnteschürverein in diesem Jahr?<br>
       Gestaltet die Lösungszahl nach eurer Phantasie mit Materialien aus
-      der Natur und sende ein Foto im Formular:</p><br><br>
+      der Natur und sende ein Foto im Formular:</p>
     <div id="zsform">
       <label for="email">Deine Kontakt E-Mail:</label><br>
       <input type="text" id="email" name="email"><br>
       <label for="zsbild">Lade hier das Bild hoch:</label><br>
       <label for="zsbild" class="fileupload">Bild auswählen</label>
       <input type="file" id="zsbild" name="zsbild" accept="image/*" /><br>
-      <?php if (isset($_SESSION["groupid"])){}else{ ?>
+      <?php if (isset($_SESSION["groupid"])) {
+      } else { ?>
         <input type="checkbox" id="private" name="private" value="privat">
         <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br>
       <?php } ?>
-      <button class="button" onclick="onboarding()">Starten</button>
+      <button class="button" onclick="sendzs()">Senden</button>
       <script>
-        document.getElementById("zsbild").addEventListener("change", function(){
+        document.getElementById("zsbild").addEventListener("change", function() {
           document.getElementsByClassName("fileupload")[0].innerHTML = document.getElementById("zsbild").files.item(0).name;
         })
-        function onboarding() {
+
+        function sendzs() {
           var photo = document.getElementById("zsbild");
           var email = document.getElementById("email").value
           var data = new FormData();
           data.append('art', "zsupload");
           data.append('photo', photo.files[0]);
           data.append('email', email);
-          if (typeof document.getElementById("private") !== 'undefined'){
+          if (typeof document.getElementById("private") !== 'undefined') {
             data.append('privat', document.getElementById("private").checked);
           }
 
           var xmlhttp = new XMLHttpRequest()
           xmlhttp.open("POST", "backend/bilder.php");
           xmlhttp.send(data);
-          document.getElementById("zsform").style.display = "none";
+
+          xmlhttp.onload = () => {
+            if (xmlhttp.status == 200) {
+              document.getElementById("zsform").innerHTML = "<p class=\"red\">Wurde erfolgreich gesendet</p>";
+            } else {
+              document.getElementById("zsform").innerHTML = "<p class=\"red\">Leider ist ein Fehler aufgetreten. Falls du trotzdem teilnehmen möchtest, kannst du das Foto an <a href=\"mailto:foto@bettle-trail.ch\">foto@bettle-trail.ch</a> senden.</p>";
+            }
+          };
         }
       </script>
     </div><br>
