@@ -14,12 +14,12 @@ Veränderung der Lippenspannung.
             <br>
             <img src="img/alphorn/noten.webp" alt="Decodier Pyramiede für Morsecode">
             <p>Früher wurden Tannen verwendet, welche an einem steilen Hang
-krumm gewachsen sind, siehe Foto.<b>
+krumm gewachsen sind, siehe Foto.<br>
 Die Bearbeitung erfolgte von Hand und benötigte ca. 80
-Arbeitsstunden.<b>
+Arbeitsstunden.<br>
 Heute werden zum Teil moderne CNC-Maschinen verwendet.
-Ein fertiges Alphorn wiegt ca. 4 kg.<b>
-Etwa 55 kg Holz werden dazu benötigt.<b>
+Ein fertiges Alphorn wiegt ca. 4 kg.<br>
+Etwa 55 kg Holz werden dazu benötigt.<br>
 Das vorwiegend in der Schweiz geblasene Alphorn hat eine Länge von
 3.47 Meter und ist in Fis/Ges gestimmt.</p>
             <br><br>

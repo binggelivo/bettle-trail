@@ -61,7 +61,7 @@ Viel Glück!</p>
             </div>
         </div>
         <div class="block50 block beige rounded">
-        <img src="img/tvb.webp" class="vlogo"><br>
+        <img src="img/turnverein.webp" class="vlogo"><br>
             <h1>Turnverein Bettlach</h1>
             <p>Der TV Bettlach ist mit über 250 Erwachsenen und über 150
 Jugendlichen der grösste Verein im Dorf und bildet eine wichtige
@@ -79,16 +79,13 @@ einen gesundheitsfördernden und gemeinschaftlichen Beitrag dar.<br><br>
 Hesch Inträssä? De chum doch mou cho ineluege…</p>
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="img/tvb/1.webp" alt="Pfadi Bettlach Sarasani im Bundeslager 2022">
+                <img src="img/tvb/1.webp" alt="Turnverein Bettlach Leitungsteam">
               </div>
               <div class="mySlides fade">
-                <img src="img/tvb/2.webp" alt="Pfadi Bettlach Mushmelows über dem Feuer">
+                <img src="img/tvb/2.webp" alt="Turnverein Bettlach Aerobic Gruppe">
               </div>
               <div class="mySlides fade">
-                <img src="img/tvb/3.webp" alt="Pfadi Bettlach Wafeln auf Feuer">
-              </div>
-              <div class="mySlides fade">
-                <img src="img/tvb/4.webp" alt="Pfadi Bettlach Seilbahn">
+                <img src="img/tvb/3.webp" alt="Turnverein Bettlach Gruppenbild">
               </div>
               <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
               <button class="next" onclick="plusSlides(1)">&#10095;</button>
@@ -97,10 +94,9 @@ Hesch Inträssä? De chum doch mou cho ineluege…</p>
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
             </div>
             <br>
-            <a href="https://pfadibettlach.ch" class="button">Website</a><a href="https://pfadibettlach.ch/first" class="button">Mehr Infos</a>
+            <a href="http://www.turnverein-bettlach.ch/" class="button">Website</a>
             <script>
               var slideIndex = 1;
               showSlides(slideIndex);

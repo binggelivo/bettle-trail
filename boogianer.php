@@ -157,7 +157,7 @@ include 'header.php';
       <span class="dot" onclick="currentSlide(6)"></span>
     </div>
     <br>
-    <a href="https://pfadibettlach.ch" class="button">Website</a><a href="https://pfadibettlach.ch/first" class="button">Mehr Infos</a>
+    <a href="http://www.bettlach.ch/site.html?sid=125&OID=360" class="button">Mehr Infos</a>
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);

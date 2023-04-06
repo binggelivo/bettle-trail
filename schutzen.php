@@ -20,8 +20,8 @@ Ringwert 8 = Gemeindehaus<br>
 Ringwert 9 = Treppe<br>
             </p>
             <br>
-            <img src="img/schutzen/zielen.webp" alt="Wie ziehlt man um zum Ziel zu kommen">
-            <img src="img/schutzen/scheibe.webp" alt="Wie liest man die Zielscheibe">
+            <img src="img/schutze/zielen.webp" alt="Wie ziehlt man um zum Ziel zu kommen">
+            <img src="img/schutze/scheibe.webp" alt="Wie liest man die Zielscheibe">
             <br><br>
             <div class="accordioncontainer">
                 <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
@@ -83,10 +83,10 @@ Jahresprogramme findest Du auf www.bettlach.ch. Wir würden uns
 freuen Dich begrüssen zu dürfen.</p>
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="img/pfadi/1.webp" alt="Schützen Bettlach Schützen im Schützenstand">
+                <img src="img/schutze/1.webp" alt="Schützen Bettlach Schützen im Schützenstand">
               </div>
               <div class="mySlides fade">
-                <img src="img/pfadi/2.webp" alt="Schützen Bettlach Scheiben vom Schützenstand">
+                <img src="img/schutze/2.webp" alt="Schützen Bettlach Scheiben vom Schützenstand">
               </div>
               <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
               <button class="next" onclick="plusSlides(1)">&#10095;</button>

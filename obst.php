@@ -13,8 +13,6 @@ include 'header.php';
       <li>ein Spiegel</li>
     </ol>
     </p>
-    <br>
-    <img src="img/pfadi/morse.webp" alt="Decodier Pyramiede für Morsecode">
     <br><br>
     <div class="accordioncontainer">
       <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>

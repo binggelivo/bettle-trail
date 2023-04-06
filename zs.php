@@ -17,7 +17,7 @@ Frage 4: Wie viele Anlässe „i dr Schür“ organisiert der
 Zähnteschürverein in diesem Jahr?<br>
 Gestaltet die Lösungszahl nach eurer Phantasie mit Materialien aus
 der Natur und sendet ein Foto an: <a href="mailto:foto@bettle-trail.ch">foto@bettle-trail.ch</a><br><br>
-<b>Einsendeschluss: 15. August 2023.<b><br><br>
+<b>Einsendeschluss: 15. August 2023.</b><br><br>
 Unter den richtigen Lösungszahlen erkürt der Vorstand die drei
 kreativsten und schönsten Fotos.
 Es gibt tolle Preise zu gewinnen:
@@ -30,8 +30,6 @@ Es gibt tolle Preise zu gewinnen:
 Hinweis zum nächsten Posten:<br>
 Ersetze die ersten drei Ziffern der Lösungszahl durch die Buchstaben.
             </p>
-            <br>
-            <img src="img/pfadi/morse.webp" alt="Decodier Pyramiede für Morsecode">
             <br><br>
             <div class="accordioncontainer">
                 <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
