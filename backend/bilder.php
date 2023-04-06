@@ -10,6 +10,10 @@ $dbname = "binggeli_bettle-trail";
 
 if (isset($_POST["art"])){
     if ($_POST["art"] == "onboarding"){
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($_FILES["photo"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         print_r(basename($_FILES["photo"]["name"]));
         echo "<br><br>";
         print_r(strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)));
