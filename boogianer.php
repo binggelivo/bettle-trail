@@ -11,7 +11,8 @@ include 'header.php';
       An wie vielen weiteren Anlässen (ausserhalb der Fasnacht) haben sich
       die Böögianer engagiert?<br><br>
       <b>Frage 2:</b><br>
-      Wie viele Gründungsmitglieder zählt unser Verein?<br>
+      Wie viele Gründungsmitglieder zählt unser Verein?
+    </p>
     <table>
       <tr>
         <td>a. 4</td>
@@ -30,8 +31,8 @@ include 'header.php';
         <td>Ziffer für die Lösungszahl = 0</td>
       </tr>
     </table><br>
-    <b>Frage 3:</b><br>
-    Was lieben alle Böögianer?<br>
+    <p><b>Frage 3:</b><br>
+      Was lieben alle Böögianer?</p>
     <table>
       <tr>
         <td>a. Fasnachtswagen</td>
@@ -46,8 +47,8 @@ include 'header.php';
         <td>Ziffer für die Lösungszahl = 9</td>
       </tr>
     </table><br>
-    <b>Frage 4:</b><br>
-    Wo wurde der erste Böög gebaut?<br>
+    <p><b>Frage 4:</b><br>
+      Wo wurde der erste Böög gebaut?</p>
     <table>
       <tr>
         <td>a. in einer Garage</td>
@@ -62,7 +63,6 @@ include 'header.php';
         <td>Ziffer für die Lösungszahl = 8</td>
       </tr>
     </table>
-    </p>
     <br><br>
     <div class="accordioncontainer">
       <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
@@ -109,23 +109,23 @@ include 'header.php';
     <img src="img/boogianer.webp" class="vlogo"><br>
     <h1>Böögianer Bettlach</h1>
     <p>Die Böögianer sind eine Fasnachtszunft, welche den Böög bauen und
-das Böögverbrennen durchführen. Gegründet wurden die Böögianer
-im Jahr 2017 von den 3 Gründungsmitgliedern. Der Gründungsort war
-die Garage eines der 3 Gründungsmitglieder, in welcher dann auch der
-erste Böög gebaut wurde. Der Erfolg war gross und der Verein fing an
-zu wachsen und schon bald durften wir in einer grösseren Halle den
-Böög bauen. Beim Böögbau wurde in Zusammenarbeit mit einem Profi
-auch professionelle Pyrotechnik verbaut.<br><br>
-Dank dem Mitgliederwachstum konnte sich der Verein an weiteren
-Anlässen wie dem Zähnteschürfest und dem Silvesterapéro
-engagieren.<br><br>
-Aktuell konzentriert sich der Verein auf das Wesentliche und legt
-den Fokus wieder mehr auf den Böögbau, die Chesslette und das
-Böögverbrennen. Was aber nicht heisst, dass es während der
-Sommerzeit keine vereinsinternen Anlässe gibt. Alle Böögianer lieben
-das Feuer sowie gutes Essen und dies lässt sich perfekt mit einem
-gemütlichen Grillabend/Grilltag kombinieren.<br><br>
-Unser Motto:&emsp;&emsp;Vom Dorf, fürs Dorf!</p>
+      das Böögverbrennen durchführen. Gegründet wurden die Böögianer
+      im Jahr 2017 von den 3 Gründungsmitgliedern. Der Gründungsort war
+      die Garage eines der 3 Gründungsmitglieder, in welcher dann auch der
+      erste Böög gebaut wurde. Der Erfolg war gross und der Verein fing an
+      zu wachsen und schon bald durften wir in einer grösseren Halle den
+      Böög bauen. Beim Böögbau wurde in Zusammenarbeit mit einem Profi
+      auch professionelle Pyrotechnik verbaut.<br><br>
+      Dank dem Mitgliederwachstum konnte sich der Verein an weiteren
+      Anlässen wie dem Zähnteschürfest und dem Silvesterapéro
+      engagieren.<br><br>
+      Aktuell konzentriert sich der Verein auf das Wesentliche und legt
+      den Fokus wieder mehr auf den Böögbau, die Chesslette und das
+      Böögverbrennen. Was aber nicht heisst, dass es während der
+      Sommerzeit keine vereinsinternen Anlässe gibt. Alle Böögianer lieben
+      das Feuer sowie gutes Essen und dies lässt sich perfekt mit einem
+      gemütlichen Grillabend/Grilltag kombinieren.<br><br>
+      Unser Motto:&emsp;&emsp;Vom Dorf, fürs Dorf!</p>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="img/boogianer/1.webp" alt="Böögianer Zug Böög">

@@ -3,16 +3,25 @@ include 'header.php';
 ?>
     <div class="container strech margin-b5">
         <div class="block50 block beige rounded">
-            <h2>Posten 8</h2>
-            <p>Drücke den grossen roten Knopf. Findest du das Blinkende Licht?
-Kleiner Tipp das Licht ist hinter verschlossener Türe.<br><br>
-Lasse dich vom Licht anleiten in welche Richtung du weiter gehen
-musst. Hier jedoch eine kleine Hilfe:<br><br>
-Finde unser ____, in dem du über den ___________ gehst und Richtung
-______ läufst. Vor der __________ geht es _________.
+            <h2>Posten 10</h2>
+            <p>Das Alphorn ist ein Naturtoninstrument ohne Grifflöcher, Ventile,
+Klappen etc.<br>
+Indem Luft durch die Lippen ins Mundstück gepresst wird, geraten
+diese in Schwingungen und ein Ton entsteht.<br>
+Die Kunst des Alphornspiels liegt in der schnellen und präzisen
+Veränderung der Lippenspannung.
             </p>
             <br>
-            <img src="img/pfadi/morse.webp" alt="Decodier Pyramiede für Morsecode">
+            <img src="img/alphorn/noten.webp" alt="Decodier Pyramiede für Morsecode">
+            <p>Früher wurden Tannen verwendet, welche an einem steilen Hang
+krumm gewachsen sind, siehe Foto.<b>
+Die Bearbeitung erfolgte von Hand und benötigte ca. 80
+Arbeitsstunden.<b>
+Heute werden zum Teil moderne CNC-Maschinen verwendet.
+Ein fertiges Alphorn wiegt ca. 4 kg.<b>
+Etwa 55 kg Holz werden dazu benötigt.<b>
+Das vorwiegend in der Schweiz geblasene Alphorn hat eine Länge von
+3.47 Meter und ist in Fis/Ges gestimmt.</p>
             <br><br>
             <div class="accordioncontainer">
                 <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
@@ -57,24 +66,34 @@ ______ läufst. Vor der __________ geht es _________.
         </div>
         <div class="block50 block beige rounded">
             <img src="img/alphorn.webp" class="vlogo"><br>
-            <h1>Pfadi Bettlach</h1>
-            <p>Willst du Jahrgangübergreifende Freundschaften schliessen?<br>
-Möchtest du draussen und drinnen spannende Abenteuer erleben?<br>
-Willst du Teil der grössten Jugendorganisation der Schweiz sein?<br><br>
-Dann bist du bei der Pfadi Bettlach genau richtig!<br><br>
-Seit über 65 Jahren sind wir ein fester Bestandteil des Bettlacher Dorf- und Vereinslebens. Mit permanent rund 50 Mitgliedern zählen wir zu den mittelgrossen Pfadiabteilungen im Kanton. Wir sind Teil der Pfadi Kanton Solothurn sowie der Pfadibewegung Schweiz. Allein hierzulande gibt es rund 550 lokale Pfadiabteilungen mit 50‘000 Pfadis.</p>
+            <h1>Alphorngruppe Echo vom Jura</h1>
+            <p><b>Willkommen bei der Alphorngruppe „Echo vom Jura“</b><br>
+Die Alphorngruppe „Echo vom Jura“ besteht seit 2010.<br>
+Sie setzt sich aus engagierten Alphornbläserinnen und Alphornbläsern
+der näheren und weiteren Umgebung zusammen.<br>
+Nebst in der Gruppenformation treten wir auch in Solo-, Duo- oder
+Trio-Besetzung auf.<br>
+Gerne erfreuen wir unsere Zuhörer an den unterschiedlichsten
+Anlässen mit gepflegter Alphornmusik. Sei es an einem Geburtstag,
+Hochzeit, Firmenfest, Jodlersonntag oder an einem öffentlichen
+Grossanlass.<br>
+An Kursen vermitteln wir Interessierten die Schönheit und Eigenheiten
+dieses wunderbaren Instrumentes mit dem unvergesslichen Naturton.<br>
+<b>Alphorn ist ideal für Erwachsene mit/ohne Musikerfahrung und
+Kinder ab 10 J.</b>
+<ul>
+  <li>wenig Töne, keine Notenkenntnisse erforderlich</li>
+  <li>unterstützt die korrekte Atmung und du musizierst oft in der Natur</li>
+  <li>kann mit Schalldämpfer problemlos in der Wohnung geblasen werden!</li>
+</ul>
+<b>Melde dich für eine kostenlose Schnupperstunde bei</b><br>
+Ruedi Bauriedl 032 645 27 09</p>
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="img/pfadi/1.webp" alt="Pfadi Bettlach Sarasani im Bundeslager 2022">
+                <img src="img/alphorn/1.webp" alt="Alphorngruppe Echo vom Jura spielt">
               </div>
               <div class="mySlides fade">
-                <img src="img/pfadi/2.webp" alt="Pfadi Bettlach Mushmelows über dem Feuer">
-              </div>
-              <div class="mySlides fade">
-                <img src="img/pfadi/3.webp" alt="Pfadi Bettlach Wafeln auf Feuer">
-              </div>
-              <div class="mySlides fade">
-                <img src="img/pfadi/4.webp" alt="Pfadi Bettlach Seilbahn">
+                <img src="img/alphorn/2.webp" alt="Kind spielt auf dem Alphorn">
               </div>
               <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
               <button class="next" onclick="plusSlides(1)">&#10095;</button>
@@ -82,11 +101,9 @@ Seit über 65 Jahren sind wir ein fester Bestandteil des Bettlacher Dorf- und Ve
             <div style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
             </div>
             <br>
-            <a href="https://pfadibettlach.ch" class="button">Website</a><a href="https://pfadibettlach.ch/first" class="button">Mehr Infos</a>
+            <a href="https://alphorn4u.ch" class="button">Website</a>
             <script>
               var slideIndex = 1;
               showSlides(slideIndex);

@@ -3,16 +3,21 @@ include 'header.php';
 ?>
     <div class="container strech margin-b5">
         <div class="block50 block beige rounded">
-            <h2>Posten 8</h2>
-            <p>Drücke den grossen roten Knopf. Findest du das Blinkende Licht?
-Kleiner Tipp das Licht ist hinter verschlossener Türe.<br><br>
-Lasse dich vom Licht anleiten in welche Richtung du weiter gehen
-musst. Hier jedoch eine kleine Hilfe:<br><br>
-Finde unser ____, in dem du über den ___________ gehst und Richtung
-______ läufst. Vor der __________ geht es _________.
-            </p>
-            <br>
-            <img src="img/pfadi/morse.webp" alt="Decodier Pyramiede für Morsecode">
+            <h2>Posten 2</h2>
+            <p>Herzlich willkommen am Posten des Turnvereins Bettlach!<br><br>
+Du stehst hier vor einem grossen Memory Spiel. Weisst Du noch, wie
+das Memory Spiel funktioniert?<br>
+Deine Aufgabe ist es, die Hinweise zum nächsten Posten zu finden,
+damit Du weisst, in welche Richtung es weitergeht. Die Hinweise
+befinden sich auf der Rückseite der drehbaren Felder. Beim Loslassen
+drehen sich die Felder wieder zurück in die Ausgangsposition.<br><br>
+<b>Spielregeln:</b>
+<ul>
+  <li>Pro Spielzug darfst Du jeweils zwei Felder umdrehen</li>
+  <li>Suche die zusammenpassenden Felder und merke Dir die Hinweise</li>
+  <li>Wenn Du alle Hinweise gefunden hast, sollte Dir klar sein in welche Richtung Du nun gehen musst</li>
+</ul><br>
+Viel Glück!</p>
             <br><br>
             <div class="accordioncontainer">
                 <button class="accordion">Tipp 1 - <rot>minus 20 Punkte</rot></button>
@@ -57,24 +62,33 @@ ______ läufst. Vor der __________ geht es _________.
         </div>
         <div class="block50 block beige rounded">
         <img src="img/tvb.webp" class="vlogo"><br>
-            <h1>Pfadi Bettlach</h1>
-            <p>Willst du Jahrgangübergreifende Freundschaften schliessen?<br>
-Möchtest du draussen und drinnen spannende Abenteuer erleben?<br>
-Willst du Teil der grössten Jugendorganisation der Schweiz sein?<br><br>
-Dann bist du bei der Pfadi Bettlach genau richtig!<br><br>
-Seit über 65 Jahren sind wir ein fester Bestandteil des Bettlacher Dorf- und Vereinslebens. Mit permanent rund 50 Mitgliedern zählen wir zu den mittelgrossen Pfadiabteilungen im Kanton. Wir sind Teil der Pfadi Kanton Solothurn sowie der Pfadibewegung Schweiz. Allein hierzulande gibt es rund 550 lokale Pfadiabteilungen mit 50‘000 Pfadis.</p>
+            <h1>Turnverein Bettlach</h1>
+            <p>Der TV Bettlach ist mit über 250 Erwachsenen und über 150
+Jugendlichen der grösste Verein im Dorf und bildet eine wichtige
+Säule in der Freizeitbeschäftigung für Jung und Alt, bei der neben dem
+Turnerischen, auch Kameradschaft und Spass nicht zu kurz kommen.
+In diesem Jahr feiert der TV Bettlach sein 125-jähriges Bestehen
+sowie das 20-jährige Jubiläum seit dem Zusammenschluss der drei
+Turnvereine (Turnverein / Damenturnverein / Frauenturnverein)<br>
+Das Sportangebot des TV Bettlach ist sehr umfangreich. Mit 8
+Jugend-, 4 Wettkampf- sowie 5 polysportiven Fit- & Fun-Abteilungen
+finden Kinder, Jugendliche und Erwachsene ein abwechslungsreiches
+Programm. Turnerische Bewegung, in all ihren Facetten zwischen Spiel
+und Leistung, stellt neben einer sinnvollen Freizeitbeschäftigung auch
+einen gesundheitsfördernden und gemeinschaftlichen Beitrag dar.<br><br>
+Hesch Inträssä? De chum doch mou cho ineluege…</p>
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="img/pfadi/1.webp" alt="Pfadi Bettlach Sarasani im Bundeslager 2022">
+                <img src="img/tvb/1.webp" alt="Pfadi Bettlach Sarasani im Bundeslager 2022">
               </div>
               <div class="mySlides fade">
-                <img src="img/pfadi/2.webp" alt="Pfadi Bettlach Mushmelows über dem Feuer">
+                <img src="img/tvb/2.webp" alt="Pfadi Bettlach Mushmelows über dem Feuer">
               </div>
               <div class="mySlides fade">
-                <img src="img/pfadi/3.webp" alt="Pfadi Bettlach Wafeln auf Feuer">
+                <img src="img/tvb/3.webp" alt="Pfadi Bettlach Wafeln auf Feuer">
               </div>
               <div class="mySlides fade">
-                <img src="img/pfadi/4.webp" alt="Pfadi Bettlach Seilbahn">
+                <img src="img/tvb/4.webp" alt="Pfadi Bettlach Seilbahn">
               </div>
               <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
               <button class="next" onclick="plusSlides(1)">&#10095;</button>
