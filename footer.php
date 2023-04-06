@@ -30,14 +30,16 @@ if (isset($_SESSION["groupid"])){
 <script>
     for (i = 0; i < document.getElementsByClassName("accordion").length; i++) {
         document.getElementsByClassName("accordion")[i].addEventListener("click", function(){
-            var points = this.getAttribute("points");
-            var data = new FormData();
-            data.append('points', parseInt(points));
+            var points = parseInt(this.getAttribute("points"));
+            if (points > 0){
+                var data = new FormData();
+                data.append('points',points);
 
-            var xmlhttp = new XMLHttpRequest()
-            xmlhttp.open("POST", "backend/points.php");
-            xmlhttp.send(data);
-            this.getAttribute("points") = 0;
+                var xmlhttp = new XMLHttpRequest()
+                xmlhttp.open("POST", "backend/points.php");
+                xmlhttp.send(data);
+                this.setAttribute("points", "0");
+            }
         });
     }
 </script>
