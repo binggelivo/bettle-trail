@@ -3,7 +3,7 @@ include 'header.php';
 ?>
     <div class="container strech margin-b5">
         <div class="block50 block beige rounded">
-            <h1>Posten 8</h1>
+            <h2>Posten 8</h2>
             <p>Drücke den grossen roten Knopf. Findest du das Blinkende Licht?
 Kleiner Tipp das Licht ist hinter verschlossener Türe.<br><br>
 Lasse dich vom Licht anleiten in welche Richtung du weiter gehen
@@ -56,7 +56,8 @@ ______ läufst. Vor der __________ geht es _________.
             </div>
         </div>
         <div class="block50 block beige rounded">
-            <h2>Pfadi Bettlach</h2>
+            <img src="img/ogv.webp" class="vlogo"><br>
+            <h1>Pfadi Bettlach</h1>
             <p>Willst du Jahrgangübergreifende Freundschaften schliessen?<br>
 Möchtest du draussen und drinnen spannende Abenteuer erleben?<br>
 Willst du Teil der grössten Jugendorganisation der Schweiz sein?<br><br>
