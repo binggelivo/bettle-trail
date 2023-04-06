@@ -23,7 +23,7 @@ include 'header.php';
       <label for="zsbild">Lade hier das Bild hoch:</label><br>
       <label for="zsbild" class="fileupload">Bild auswählen</label>
       <input type="file" id="zsbild" name="zsbild" accept="image/*" /><br>
-      <?php if (isset($_SESSION["groupid"])) {
+      <?php if (isset($_SESSION["privat"])) {
       } else { ?>
         <input type="checkbox" id="private" name="private" value="privat">
         <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br>

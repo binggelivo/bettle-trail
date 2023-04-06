@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 10;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
