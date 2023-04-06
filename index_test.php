@@ -19,7 +19,7 @@ include 'header.php';
                 fehlen, kannst du dies über die Homepage melden. Sammle die
                 Goldstücke.
             </p>
-            <a href="/onboarding">Starte den Interactiven Trail</a>
+            <a href="/onboarding" class=".button">Starte den Interactiven Trail</a>
         </div>
         <div class="block50 block beige rounded">
             <div class="h1"></div>

@@ -128,6 +128,21 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+input[type="text"], .fileupload{
+    padding: 10px;
+    font-family: 'basic-sans';
+    background-color: #1f382d;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
 
 /*Slider*/
 .slideshow-container {
