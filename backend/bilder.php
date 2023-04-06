@@ -12,7 +12,7 @@ if (isset($_POST["art"])){
     if ($_POST["art"] == "onboarding"){
         print_r(basename($_FILES["photo"]["name"]));
         echo "<br><br>";
-        print_r(strtolower(pathinfo($target_file,PATHINFO_EXTENSION)));
+        print_r(strtolower(pathinfo(basename($_FILES["photo"]["name"]),PATHINFO_EXTENSION)));
         echo "<br><br>";
         /*if (move_uploaded_file($_FILES["photo"]["tmp_name"], "uploads/" . microtime())){
 
