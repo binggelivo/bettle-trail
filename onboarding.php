@@ -10,10 +10,24 @@ include 'header.php';
             <input type="text" id="groupname" name="groupname"><br><br>
             <label for="gruppenbild">Euer Gruppenbild oder dein Profilbild:</label><br>
             <label for="gruppenbild" class="fileupload">Bild auswählen</label>
-            <input type="file" id="gruppenbild" name="gruppenbild" accept="image/*" /><br><br><br>
-            <button class="button">Starten</button>
+            <input type="file" id="gruppenbild" name="gruppenbild" accept="image/*" /><br><br>
+            <input type="checkbox" id="private" name="private" value="privat">
+            <label for="private"> Ich bin einverstanden, das die Bilder auf dieser Website genutzt werden</label><br><br><br>
+            <button class="button" onclick="onboarding()">Starten</button>
             <scrip>
+                function onboarding(){
+                    var photo = document.getElementById("gruppenbild");
+                    var name = document.getElementById("groupname").value
+                    var data=new FormData();
+                    data.append('art', "onboarding");
+                    data.append('photo',photo.files[0]);
+                    data.append('groupname', name);
+                    data.append('privat', document.getElementById("private").checked);
 
+                    var xmlhttp=new XMLHttpRequest()
+                    xmlhttp.open("POST", "ajaxpost.php");
+                    xmlhttp.send(data);
+                }
             </scrip>
         </div>
     </div>

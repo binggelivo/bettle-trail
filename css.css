@@ -1,4 +1,4 @@
-body{
+body {
     font-family: helvetica, sans-serif;
     background-color: #1f382d;
     margin: 20px;
@@ -6,129 +6,136 @@ body{
     font-family: basic-sans, sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
 
-rot{
+rot {
     color: #eb5e5e;
 }
 
-.vlogo{
+.vlogo {
     object-fit: contain;
     height: 120px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;;
+    flex-wrap: wrap-reverse;
+    ;
     gap: 20px 40px;
     max-width: 1200px;
     margin: auto;
 }
 
-.logo{
+.logo {
     max-width: 200px;
 }
 
-.centered{
+.centered {
     justify-content: center;
 }
 
-.strech{
+.strech {
     align-items: stretch;
 }
 
-.beige{
+.beige {
     background-color: #feeeca;
 }
 
-.block{
+.block {
     padding: 20px 20px 50px 20px;
 }
 
-.block50{
+.block50 {
     width: calc(50% - 60px);
 }
 
-.block100{
+.block100 {
     width: calc(100% - 40px);
 }
 
-.rounded{
+.rounded {
     border-radius: 20px;
 }
 
-.margin-b5{
+.margin-b5 {
     margin-bottom: 50px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: helvetica, sans-serif;
     font-family: espiritu, sans-serif;
     color: #1f382d;
 }
 
-.footer-logos{
+.footer-logos {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-logo{
+.footer-logo {
     width: 10%;
     min-width: 120px;
     height: 80px;
 }
 
-.footer-logo img{
+.footer-logo img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.unterstutzer-logos{
+.unterstutzer-logos {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.unterstutzer-logo{
+.unterstutzer-logo {
     width: calc(50% - 10px);
     min-width: 300px;
 }
 
-.unterstutzer-logo img{
+.unterstutzer-logo img {
     width: 100%;
     height: 100px;
     object-fit: contain;
 }
 
-.h1{
-    display:block;
+.h1 {
+    display: block;
     height: 58px;
 }
 
-#map{
+#map {
     width: 100%;
     height: 300px;
 }
 
 
 @media screen and (max-width:800px) {
-    .block50{
+    .block50 {
         width: calc(100% - 40px);
     }
-    
-    .h1{
-        display:none;
+
+    .h1 {
+        display: none;
     }
 }
 
-input[type="text"], .fileupload{
+input[type="text"],
+.fileupload {
     padding: 10px;
     font-family: 'basic-sans';
     background-color: #1f382d;
@@ -137,6 +144,7 @@ input[type="text"], .fileupload{
     border-radius: 10px;
     width: calc(100% - 20px);
     font-size: 16px;
+    display: block;
 }
 
 input[type="file"] {
@@ -151,7 +159,7 @@ input[type="file"] {
     margin: auto;
 }
 
-.mySlides img{
+.mySlides img {
     object-fit: contain;
     height: 300px;
 }
@@ -173,17 +181,20 @@ input[type="file"] {
     border: none;
     background-color: #00000000;
 }
+
 /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -195,10 +206,12 @@ input[type="file"] {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active,
 .dot:hover {
     background-color: #1f382d;
 }
+
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
@@ -206,24 +219,28 @@ input[type="file"] {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
     from {
-      opacity: .4
+        opacity: .4
     }
+
     to {
-      opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
+        opacity: 1
     }
 }
 
-.button{
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.button {
     margin: 5px 10px 5px 0px;
     padding: 10px;
     border-radius: 20px;
@@ -231,38 +248,78 @@ input[type="file"] {
     text-decoration: none;
     background-color: #1f382d;
     display: inline-block;
+    border: none;
 }
 
-.button:hover{
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: none;
+    background-color: #1f382d;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+.button:hover {
     backgroud-color: #226b44;
 }
 
-.accordioncontainer{
+.accordioncontainer {
     border-radius: 20px;
     overflow: hidden;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #1f382d;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+    background-color: #1f382d;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #226b44;
+.active,
+.accordion:hover {
+    background-color: #226b44;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 10px;
-  display: none;
-  overflow: hidden;
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
 }
