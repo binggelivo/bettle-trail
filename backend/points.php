@@ -1,4 +1,5 @@
 <?php 
+session_start();
 echo "neue: " . $_POST["points"];
 echo "<br>";
 echo "vorher: " . $_SESSION["points"];
