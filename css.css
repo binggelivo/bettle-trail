@@ -22,7 +22,7 @@ rot{
 .container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;;
     gap: 20px 40px;
     max-width: 1200px;
     margin: auto;
