@@ -43,7 +43,7 @@ echo $_SESSION["grouid"];
           data.append('art', "zsupload");
           data.append('photo', photo.files[0]);
           data.append('email', email);
-          if (typeof document.getElementById("private") !== 'undefined') {
+          if (typeof document.getElementById("private") !== null) {
             data.append('privat', document.getElementById("private").checked);
           }
 
