@@ -68,15 +68,39 @@ $dbname = "binggeli_bettle-trail";
     </div>
     <div class="block50 block beige rounded">
         <h2>Score-Board</h2>
-        <p>Herzlich willkommen beim Bettle-Trail. Dieser Rätselweg der
-            Bettlacher Vereine führt durchs Dorf und eignet sich für Jung und
-            Alt. Der Rundgang dauert 1.5-2h (reine Gehzeit ca. 40min.) und ist
-            auch mit Kinderwagen begehbar. Der Bettle-Trail ist kostenlos, vom
-            7.4.-15.8.2023 jederzeit öffentlich zugänglich und kann mit oder ohne
-            Smartphone gemacht werden.</p>
+        <p>Führe das Score-Board an indem du die Interaktive Tour absolvierst.</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            <?php
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT `user_name`, (`user_start` - `user_emd` + (`user_points` * 100)) as score FROM `user` ORDER BY score DESC limit 10;";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                $i = 1;
+
+                // output data of each row
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>" . $i . "<td></td><td>" . $row["user_name"] . "</td><td>" . $row["score"] . "</td></tr>";
+                    $i++;
+                }
+            } else {
+                echo "0 results";
+            }
+            $conn->close();
+            ?>
+        </table>
 
 
-        <p>
     </div>
     <div class="block50 block beige rounded">
         <h2>Fotos vom Teilnehmenden</h2>
@@ -107,46 +131,45 @@ $dbname = "binggeli_bettle-trail";
             echo "<button class=\"prev\" onclick=\"plusSlides(-1)\">&#10094;</button><button class=\"next\" onclick=\"plusSlides(1)\">&#10095;</button></div><div style=\"text-align:center\">";
             echo $ibulet;
             echo "</div>";
-
         } else {
             echo "0 results";
         }
         $conn->close();
         ?>
-    <br>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
+        <br>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-        
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
     </div>
 </div>
 
