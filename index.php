@@ -97,7 +97,7 @@ $dbname = "binggeli_bettle-trail";
 
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-                $iphoto .= "<div class=\"mySlides fade\"><img src=\"" . $row["bilder"] . "\" alt=\"Bild eines Teilnehmers des Bettle-Trail\" /></div>";
+                $iphoto .= "<div class=\"mySlides fade\"><img data-lazysrc=\"" . $row["bilder"] . "\" alt=\"Bild eines Teilnehmers des Bettle-Trail\" /></div>";
                 $ibulet .= "<span class=\"dot\" onclick=\"currentSlide(" . $i . ")\"></span>";
                 $i++;
             }
@@ -114,6 +114,21 @@ $dbname = "binggeli_bettle-trail";
         $conn->close();
         ?>
     <br>
+    <script>  
+function ReLoadImages(){
+    $('img[data-lazysrc]').each( function(){
+        //* set the img src from data-src
+        $( this ).attr( 'src', $( this ).attr( 'data-lazysrc' ) );
+        }
+    );
+}
+
+document.addEventListener('readystatechange', event => {
+    if (event.target.readyState === "interactive") {  //or at "complete" if you want it to execute in the most last state of window.
+        ReLoadImages();
+    }
+});
+</script>
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
