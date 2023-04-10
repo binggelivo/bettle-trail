@@ -23,7 +23,15 @@ rot {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    ;
+    gap: 20px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-norm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px 40px;
     max-width: 1200px;
     margin: auto;

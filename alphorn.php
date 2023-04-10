@@ -6,24 +6,31 @@ $posten = 10;
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
     <h2>Posten 10</h2>
-    <p>Das Alphorn ist ein Naturtoninstrument ohne Grifflöcher, Ventile,
-      Klappen etc.<br>
-      Indem Luft durch die Lippen ins Mundstück gepresst wird, geraten
-      diese in Schwingungen und ein Ton entsteht.<br>
-      Die Kunst des Alphornspiels liegt in der schnellen und präzisen
-      Veränderung der Lippenspannung.
+    <h3>s'Alphorn</h3>
+    <p>Das Alphorn ist ein Naturtoninstrument ohne Grifflöcher, Ventile, Klappen etc.<br><br>
+      Indem Luft durch die Lippen ins Mundstück gepresst wird, geraten diese in Schwingungen und ein Ton entsteht.
+      Je nachdem wie stark die Lippen aufeinander gepresst werden, entsteht ein anderer Ton.</p>
+    <ul>
+      <li>lockere Pressung = tiefer Ton</li>
+      <li>starke Pressung = hoher Ton</li>
+    </ul>
+    <p>Das Alphorn selbst dient nur als „Verstärker“<br><br>
+
+      Die Kunst des Alphornspiels liegt in der schnellen und präzisen Veränderung der Lippenspannung.
     </p>
     <br>
     <img src="img/alphorn/noten.webp" width="100%" alt="Decodier Pyramiede für Morsecode">
-    <p>Früher wurden Tannen verwendet, welche an einem steilen Hang
-      krumm gewachsen sind, siehe Foto.<br>
-      Die Bearbeitung erfolgte von Hand und benötigte ca. 80
-      Arbeitsstunden.<br>
-      Heute werden zum Teil moderne CNC-Maschinen verwendet.
-      Ein fertiges Alphorn wiegt ca. 4 kg.<br>
-      Etwa 55 kg Holz werden dazu benötigt.<br>
-      Das vorwiegend in der Schweiz geblasene Alphorn hat eine Länge von
-      3.47 Meter und ist in Fis/Ges gestimmt.</p>
+    <p>Früher wurden Tannen verwendet, welche an einem steilen Hang krumm gewachsen sind, siehe Foto. <br>
+
+      Die Bearbeitung erfolgte von Hand und benötigte ca. 80 Arbeitsstunden.<br>
+      Heute werden z. Teil moderne CNC-Machinen verwendet.<br><br>
+
+      Ein fertiges Alphorn wiegt ca. 4 kg. <br>
+      Etwa 55 kg Holz werden dazu benötigt.<br><br>
+
+      Das in der Schweiz vorwiegend geblasene Alphorn hat eine Länge von
+      3.47 Meter und ist in Fis/Ges gestimmt.
+    </p>
     <br>
   </div>
   <div class="block50 block beige rounded">
