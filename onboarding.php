@@ -4,7 +4,10 @@ include 'header.php';
 <div class="container strech margin-b5">
     <div class="block100 block beige rounded">
         <h1>Interaktiver Bettle-Trail</h1>
-        <p>Erlebe den Bettle-Trail mit deinem Smartphone. Bist du der schnellste, der den Parkour löst?</p>
+        <p>Erlebe den Bettle-Trail mit deinem Smartphone. Bist du der schnellste, der den Parkour löst?<br><br>
+            Die Zeit läuft so bald du auf Start gedrückt hast und endet mit dem Absenden des Schlussbildes beim Endposten. Falls du probleme hast beim Lösen der Aufgaben, kannst du gegen Zeitaufschlag Tipps lösen.<br><br>
+            Viel Spass beim Knobbeln.
+        </p>
         <div id="onboardform">
             <label for="groupname">Euer Gruppenname oder dein Name:</label><br>
             <input type="text" id="groupname" name="groupname"><br>

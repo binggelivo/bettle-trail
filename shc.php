@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 5;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -23,21 +25,20 @@ include 'header.php';
     <div class="accordioncontainer">
       <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Ein Symbol ist ein Dach </p>
       </div>
 
       <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Ein Symbol ist ein Turm</p>
       </div>
-
       <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Ein Symbol ist eine Glocke</p>
       </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 30 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Glockenturm (steige dort die Treppe zur Kirche hoch)</p>
       </div>
       <script>
         var acc = document.getElementsByClassName("accordion");
@@ -96,7 +97,7 @@ include 'header.php';
       <span class="dot" onclick="currentSlide(2)"></span>
     </div>
     <br>
-    <a href="https://www.shcbettlach.ch" class="button">Website</a>
+    <a href="https://shcbettlach.ch/events/bettletrail" class="button">Website</a>
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);

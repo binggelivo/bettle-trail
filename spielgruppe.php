@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 6;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -22,21 +24,21 @@ include 'header.php';
     <div class="accordioncontainer">
       <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Die erste Box enthält etwas von einem Baum</p>
       </div>
 
       <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Die zweite Box enthält etwas das sau weh tut wenn man drauftritt.</p>
       </div>
 
       <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Die dritte Box enthält ein Tier das normalerweise schleimig ist.</p>
       </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 30 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Die Lösung sind: Tannzapfen, Lego, Schnecke</p>
       </div>
       <script>
         var acc = document.getElementsByClassName("accordion");

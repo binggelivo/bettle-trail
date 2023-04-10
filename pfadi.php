@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 8;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -17,21 +19,24 @@ include 'header.php';
     <div class="accordioncontainer">
       <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Das Blinkende Licht gibt dir die Antwort in Morsecode. Kennst du das Morsealphabet? Jeder Buchstabe ist durch eine längere Pause getrennt und jedes Wort durch eine noch Längere Pause.
+          <br><br>
+          Nutze die Pyramiede. Alle abzweigungen die nach Links gehen sind Kurze Lichtsignale und alle abzweitungen sind Lange Lichtsignale.<br>
+          Beginne oben bei der Pyramiede und folge den Lichtimpulse bis zu einer grösseren Pause und zu einem Buchstaben.</p>
       </div>
 
       <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Das erste Wort besteht aus 4 Buchstaben, das zweite aus 13, das dritte aus 6, das vierte aus 11 und das fünfte aus 6 Buchstaben.</p>
       </div>
 
       <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Der Widergegeben Morsecode: .-.. / --- / --. / --- // --.. / . -... / .-. / .- / ... / - / .-. / . / .. / ..-. / . -. // -.- / .. / .-. / -.-. / .... / . // -.. / --- / .-. / ..-. / ... / - / .-. / .- / ... / ... / . // -... / . / .-. / --. / .- / ..- / ..-.</p>
       </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 30 Minuten</rot><?php } ?></button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <p>Der Lösungssatz ist: Finde unser <u>Logo</u>, in dem du über den <u>Zebrastreifen</u> gehst und Richtung <u>Kirche</u> läufst. Vor der <u>Dorfstrasse</u> geht es <u>bergauf</u>.</p>
       </div>
       <script>
         var acc = document.getElementsByClassName("accordion");

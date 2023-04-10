@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 7;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -23,47 +25,7 @@ include 'header.php';
     Folge dem Giglerbach (Wasser) / Wegkreuz beachten.<br>
     Viel Spass
     </p>
-    <br><br>
-    <div class="accordioncontainer">
-      <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-      <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-      </script>
-    </div>
+    <br>
   </div>
   <div class="block50 block beige rounded">
     <img src="img/comitato.webp" alt="Logo Comitato" class="vlogo"><br>

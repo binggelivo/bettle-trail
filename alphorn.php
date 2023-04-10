@@ -24,47 +24,7 @@ $posten = 10;
       Etwa 55 kg Holz werden dazu benötigt.<br>
       Das vorwiegend in der Schweiz geblasene Alphorn hat eine Länge von
       3.47 Meter und ist in Fis/Ges gestimmt.</p>
-    <br><br>
-    <div class="accordioncontainer">
-      <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion" points="5">Tipp 2 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion" points="5">Tipp 3 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-      <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-      </script>
-    </div>
+    <br>
   </div>
   <div class="block50 block beige rounded">
     <img src="img/alphorn.webp" alt="Logo Alphorngruppe Echo vom Jura" class="vlogo"><br>
@@ -97,12 +57,24 @@ $posten = 10;
       <div class="mySlides fade">
         <img src="img/alphorn/2.webp" alt="Kind spielt auf dem Alphorn">
       </div>
+      <div class="mySlides fade">
+        <img src="img/alphorn/3.webp" alt="5 Alphornbläser">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/alphorn/4.webp" alt="2 Alphornbläser im Jura">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/alphorn/5.webp" alt="6 Alphornbläser">
+      </div>
       <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
       <button class="next" onclick="plusSlides(1)">&#10095;</button>
     </div>
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
     <br>
     <a href="https://alphorn4u.ch" class="button">Website</a>

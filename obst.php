@@ -1,5 +1,7 @@
 <?php
 include 'header.php';
+
+$posten = 3;
 ?>
 <div class="container strech margin-b5">
   <div class="block50 block beige rounded">
@@ -14,7 +16,7 @@ include 'header.php';
     </ol>
     </p>
     <br><br>
-    <div class="accordioncontainer">
+    <!--<div class="accordioncontainer">
       <button class="accordion" points="5">Tipp 1 - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 5 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
@@ -29,7 +31,7 @@ include 'header.php';
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
-      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 20 Minuten</rot><?php } ?></button>
+      <button class="accordion" points="30">Lösung - <?php if (isset($_SESSION["groupid"])) { ?><rot>plus 30 Minuten</rot><?php } ?></button>
       <div class="panel">
         <p>Lorem ipsum...</p>
       </div>
@@ -53,7 +55,7 @@ include 'header.php';
           });
         }
       </script>
-    </div>
+    </div>-->
   </div>
   <div class="block50 block beige rounded">
     <img src="img/ogv.webp" alt="Logo Obst- und Gartenbauverein" class="vlogo"><br>
