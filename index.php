@@ -111,7 +111,7 @@ $dbname = "binggeli_bettle-trail";
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT DISTINCT user_endpic as bilder from ( SELECT user.user_endpic FROM user WHERE user.user_private = 1 UNION SELECT user.user_zspic FROM user WHERE user.user_private = 1 UNION SELECT user.user_startpic FROM user WHERE user.user_private = 1 UNION SELECT zsgewinn.zsgewinn_foto FROM zsgewinn WHERE zsgewinn.zsgewinn_privat = 1 UNION SELECT endform.endform_foto FROM endform WHERE endform.endform_privat = 1) nd ORDER BY RAND();";
+        $sql = "SELECT DISTINCT user_endpic as bilder from ( SELECT user.user_endpic FROM user WHERE user.user_private = 1 UNION SELECT user.user_zspic FROM user WHERE user.user_private = 1 UNION SELECT user.user_startpic FROM user WHERE user.user_private = 1 UNION SELECT zsgewinn.zsgewinn_foto FROM zsgewinn WHERE zsgewinn.zsgewinn_privat = 1 UNION SELECT endform.endform_foto FROM endform WHERE endform.endform_privat = 1) nd ORDER BY RAND() Limit 10;";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
