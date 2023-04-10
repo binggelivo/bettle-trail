@@ -12,6 +12,13 @@ $time = time();
 
 if (isset($_POST["art"])) {
     if ($_POST["art"] == "onboarding") {
+
+        if ($_POST["privat"]){
+            $_SESSION["privat"] = 1;
+        }else{
+            $_SESSION["privat"] = 0;
+        }
+
         if (($_FILES['photo']['name'] != "")) {
             $target_dir = "../uploads/";
             $file = $_FILES['photo']['name'];
@@ -20,6 +27,7 @@ if (isset($_POST["art"])) {
             $ext = $path['extension'];
             $temp_name = $_FILES['photo']['tmp_name'];
             $path_filename_ext = $target_dir . $time . "." . $ext;
+            
 
             if (file_exists($path_filename_ext)) {
             } else {
@@ -30,7 +38,7 @@ if (isset($_POST["art"])) {
         }
         $conn = new mysqli($servername, $username, $password, $dbname);
         $sql = "INSERT INTO user (user_startpic, user_name, user_private, user_start)
-        VALUES ( '" . $path_filename_ext . "', '" . $_POST["groupname"] . "', " . $_POST["privat"] . ", " . $time . ");";
+        VALUES ( '" . $path_filename_ext . "', '" . $_POST["groupname"] . "', " . $_SESSION["privat"] . ", " . $time . ");";
 
         if ($conn->query($sql) === TRUE) {
             $id = $conn->insert_id;
@@ -39,7 +47,6 @@ if (isset($_POST["art"])) {
             $_SESSION["posten"] = 0;
             $_SESSION["points"] = 0;
             $_SESSION["starttime"] = $time;
-            $_SESSION["privat"] = $_POST["privat"];
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -75,7 +82,11 @@ if (isset($_POST["art"])) {
 
         if (isset($_SESSION["privat"])){
         }else{
-            $_SESSION["privat"] = $_POST["privat"];
+            if ($_POST["privat"]){
+                $_SESSION["privat"] = 1;
+            }else{
+                $_SESSION["privat"] = 0;
+            }
         }
 
         $sql = "INSERT INTO zsgewinn (zsgewinn_email, zsgewinn_foto, zsgewinn_privat) VALUES ('" . $_POST["email"] . "', '" . $path_filename_ext . "', '" . $_SESSION["privat"] . "')";
@@ -114,14 +125,18 @@ if (isset($_POST["art"])) {
 
         if (isset($_SESSION["privat"])){
         }else{
-            $_SESSION["privat"] = $_POST["privat"];
+            if ($_POST["privat"]){
+                $_SESSION["privat"] = 1;
+            }else{
+                $_SESSION["privat"] = 0;
+            }
         }
         if (isset($_SESSION["email"])){
         }else{
             $_SESSION["email"] = $_POST["email"];
         }
 
-        $sql = "INSERT INTO endform (endform_email, endform_foto, endform_losung, endform_privat) VALUES ('" . $_SESSION["email"] . "', '" . $path_filename_ext . "', '" . $_SESSION["email"] . "', '" . $_SESSION["privat"] . "')";
+        $sql = "INSERT INTO endform (endform_email, endform_foto, endform_losung, endform_privat) VALUES ('" . $_SESSION["email"] . "', '" . $path_filename_ext . "', '" . $_SESSION["goldstuck"] . "', '" . $_SESSION["privat"] . "')";
         if ($conn->query($sql) === TRUE) {
             session_reset();
         } else {
