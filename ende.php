@@ -55,7 +55,7 @@ include 'header.php';
                 document.getElementById("endeform").innerHTML = "<rot>Wir laden die Daten hoch ...</rot>";
                 xmlhttp.onload = () => {
                     if (xmlhttp.status == 200) {
-                        document.getElementById("endeform").innerHTML = "<rot>Wurde erfolgreich gesendet</rot>";
+                        document.getElementById("endeform").innerHTML = "<green>Wurde erfolgreich gesendet</green>";
                     } else {
                         document.getElementById("endeform").innerHTML = "<rot>Leider ist ein Fehler aufgetreten. Falls du trotzdem teilnehmen möchtest, kannst du das Foto mit dem Lösungswort an <a href=\"mailto:foto@bettle-trail.ch\">foto@bettle-trail.ch</a> senden.</rot>";
                     }
