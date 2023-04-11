@@ -82,7 +82,7 @@ $dbname = "binggeli_bettle-trail";
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "SELECT `user_name`, (`user_start` - `user_emd` + (`user_points` * 100)) as score FROM `user` WHERE `user_emd` IS NOT NULL ORDER BY score DESC limit 10;";
+            $sql = 'SELECT `user_name`, (`user_start` - `user_emd` + (`user_points` * 100)) as score FROM `user` WHERE `user_emd` IS NOT NULL ORDER BY score DESC limit 10;';
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -111,7 +111,7 @@ $dbname = "binggeli_bettle-trail";
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT DISTINCT user_endpic AS bilder FROM ( SELECT user.user_endpic FROM user WHERE user.user_private = 1 AND user.user_endpic != "" UNION SELECT user.user_zspic FROM user WHERE user.user_private = 1 AND user.user_zspic != "" UNION SELECT user.user_startpic FROM user WHERE user.user_private = 1 AND user.user_startpic != "" UNION SELECT zsgewinn.zsgewinn_foto FROM zsgewinn WHERE zsgewinn.zsgewinn_privat = 1 AND zsgewinn.zsgewinn_foto != "" UNION SELECT endform.endform_foto FROM endform WHERE endform.endform_privat = 1 AND endform.endform_foto != "" ) nd ORDER BY RAND() LIMIT 10;";
+        $sql = 'SELECT DISTINCT user_endpic AS bilder FROM ( SELECT user.user_endpic FROM user WHERE user.user_private = 1 AND user.user_endpic != "" UNION SELECT user.user_zspic FROM user WHERE user.user_private = 1 AND user.user_zspic != "" UNION SELECT user.user_startpic FROM user WHERE user.user_private = 1 AND user.user_startpic != "" UNION SELECT zsgewinn.zsgewinn_foto FROM zsgewinn WHERE zsgewinn.zsgewinn_privat = 1 AND zsgewinn.zsgewinn_foto != "" UNION SELECT endform.endform_foto FROM endform WHERE endform.endform_privat = 1 AND endform.endform_foto != "" ) nd ORDER BY RAND() LIMIT 10;';
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
