@@ -41,7 +41,7 @@ include 'header.php';
                 document.getElementById("onboardform").innerHTML = "<rot>Senden ...</rot>";
                 xmlhttp.onload = () => {
                     if (xmlhttp.status == 200) {
-                        document.getElementById("endeform").innerHTML = "<green>Wurde erfolgreich gesendet</green>";
+                        document.getElementById("onboardform").innerHTML = "<green>Wurde erfolgreich gesendet</green>";
                     } else {
                         document.getElementById("onboardform").innerHTML = "<rot>Leider ist ein Fehler aufgetreten. Sende doch bitte eine mail an <a href=\"mailto:info@bettle-trail.ch\">info@bettle-trail.ch</a>.</rot>";
                     }
