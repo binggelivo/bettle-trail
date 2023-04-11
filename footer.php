@@ -19,10 +19,10 @@
                 <div class="unterstutzer-logo"><img src="img/jkskb.webp" alt="Logo Jugend-, Kultur- und Sportkomission Bettlach"></div>
             </div>
         </div>
-        <br>
-        <p><a href="/problem" style="color: #feeeca; width: 100%; text-align: center;">Kaputte Posten oder sonstige Probleme?</a></p>
-        <br><br>
     </div>
+    <br>
+    <p class="container"><a href="/problem" style="color: #feeeca; width: 100%; text-align: center;">Kaputte Posten oder sonstige Probleme?</a></p>
+    <br><br>
 </body>
 
 <?php
