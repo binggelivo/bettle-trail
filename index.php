@@ -90,7 +90,7 @@ $dbname = "binggeli_bettle-trail";
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr>" . $i . "<td></td><td>" . $row["user_name"] . "</td><td>" . $row["score"] . "</td></tr>";
+                    echo "<tr><td>" . $i . ".</td><td>" . $row["user_name"] . "</td><td>" . $row["score"] . "</td></tr>";
                     $i++;
                 }
             } else {
