@@ -32,13 +32,14 @@ if (isset($_POST["art"])) {
             if (file_exists($path_filename_ext)) {
             } else {
                 move_uploaded_file($temp_name, $path_filename_ext);
+                imagewebp(imagescale( $temp_name, 600, -1 ), $target_dir . $time . ".webp", -1);
             }
         } else {
             $path_filename_ext = "";
         }
         $conn = new mysqli($servername, $username, $password, $dbname);
         $sql = "INSERT INTO user (user_startpic, user_name, user_private, user_start)
-        VALUES ( '" . $path_filename_ext . "', '" . $_POST["groupname"] . "', " . $_SESSION["privat"] . ", " . $time . ");";
+        VALUES ( '" . $target_dir . $time . ".webp" . "', '" . $_POST["groupname"] . "', " . $_SESSION["privat"] . ", " . $time . ");";
 
         if ($conn->query($sql) === TRUE) {
             $id = $conn->insert_id;
@@ -67,13 +68,14 @@ if (isset($_POST["art"])) {
             if (file_exists($path_filename_ext)) {
             } else {
                 move_uploaded_file($temp_name, $path_filename_ext);
+                imagewebp(imagescale( $temp_name, 600, -1 ), $target_dir . $time . ".webp", -1);
             }
         } else {
             $path_filename_ext = "";
         }
         $conn = new mysqli($servername, $username, $password, $dbname);
         if (isset($_SESSION["groupid"])){
-            $sql = "UPDATE user SET user_zspic = '" . $path_filename_ext . "', user_email = '" . $_POST["email"] . "' WHERE user_id=" . $_SESSION["groupid"];
+            $sql = "UPDATE user SET user_zspic = '" . $target_dir . $time . ".webp" . "', user_email = '" . $_POST["email"] . "' WHERE user_id=" . $_SESSION["groupid"];
             if ($conn->query($sql) === TRUE) {
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
@@ -89,7 +91,7 @@ if (isset($_POST["art"])) {
             }
         }
 
-        $sql = "INSERT INTO zsgewinn (zsgewinn_email, zsgewinn_foto, zsgewinn_privat) VALUES ('" . $_POST["email"] . "', '" . $path_filename_ext . "', '" . $_SESSION["privat"] . "')";
+        $sql = "INSERT INTO zsgewinn (zsgewinn_email, zsgewinn_foto, zsgewinn_privat) VALUES ('" . $_POST["email"] . "', '" . $target_dir . $time . ".webp" . "', '" . $_SESSION["privat"] . "')";
         if ($conn->query($sql) === TRUE) {
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
@@ -110,13 +112,14 @@ if (isset($_POST["art"])) {
             if (file_exists($path_filename_ext)) {
             } else {
                 move_uploaded_file($temp_name, $path_filename_ext);
+                imagewebp(imagescale( $temp_name, 600, -1 ), $target_dir . $time . ".webp", -1);
             }
         } else {
             $path_filename_ext = "";
         }
         $conn = new mysqli($servername, $username, $password, $dbname);
         if (isset($_SESSION["groupid"])){
-            $sql = "UPDATE user SET user_endpic = '" . $path_filename_ext . "', user_points = '" . $_SESSION["points"] . "', user_emd = '" . $time . "' WHERE user_id=" . $_SESSION["groupid"];
+            $sql = "UPDATE user SET user_endpic = '" . $target_dir . $time . ".webp" . "', user_points = '" . $_SESSION["points"] . "', user_emd = '" . $time . "' WHERE user_id=" . $_SESSION["groupid"];
             if ($conn->query($sql) === TRUE) {
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
@@ -136,7 +139,7 @@ if (isset($_POST["art"])) {
             $_SESSION["email"] = $_POST["email"];
         }
 
-        $sql = "INSERT INTO endform (endform_email, endform_foto, endform_losung, endform_privat) VALUES ('" . $_SESSION["email"] . "', '" . $path_filename_ext . "', '" . $_SESSION["goldstuck"] . "', '" . $_SESSION["privat"] . "')";
+        $sql = "INSERT INTO endform (endform_email, endform_foto, endform_losung, endform_privat) VALUES ('" . $_SESSION["email"] . "', '" . $target_dir . $time . ".webp" . "', '" . $_SESSION["goldstuck"] . "', '" . $_SESSION["privat"] . "')";
         if ($conn->query($sql) === TRUE) {
             session_reset();
         } else {

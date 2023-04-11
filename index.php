@@ -93,8 +93,6 @@ $dbname = "binggeli_bettle-trail";
                     echo "<tr><td>" . $i . ".</td><td>" . $row["user_name"] . "</td><td>" . $row["score"] . "</td></tr>";
                     $i++;
                 }
-            } else {
-                echo "0 results";
             }
             $conn->close();
             ?>
