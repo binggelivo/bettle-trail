@@ -38,7 +38,7 @@ include 'header.php';
                 document.getElementById("onboardform").innerHTML = "<rot>Wir laden die Daten hoch ...</rot>";
                 xmlhttp.onload = () => {
                     if (xmlhttp.status == 200) {
-
+                        document.getElementById("endeform").innerHTML = "<green>Wurde erfolgreich gesendet</green>";
                     } else {
                         document.getElementById("onboardform").innerHTML = "<rot>Leider ist ein Fehler aufgetreten. Versuche die Seite neu zu laden.</rot>";
                     }
