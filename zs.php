@@ -54,7 +54,7 @@ $posten = 4;
           document.getElementById("zsform").innerHTML = "<rot>Wir laden die Daten hoch ...</rot>";
           xmlhttp.onload = () => {
             if (xmlhttp.status == 200) {
-              document.getElementById("zsform").innerHTML = "<rot>Wurde erfolgreich gesendet</rot>";
+              document.getElementById("zsform").innerHTML = "<green>Wurde erfolgreich gesendet</green>";
             } else {
               document.getElementById("zsform").innerHTML = "<rot>Leider ist ein Fehler aufgetreten. Falls du trotzdem teilnehmen möchtest, kannst du das Foto an <a href=\"mailto:foto@bettle-trail.ch\">foto@bettle-trail.ch</a> senden.</rot>";
             }
