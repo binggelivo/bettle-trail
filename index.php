@@ -82,7 +82,7 @@ $dbname = "binggeli_bettle-trail";
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "SELECT `user_name`, (`user_start` - `user_emd` + (`user_points` * 100)) as score FROM `user` ORDER BY score DESC limit 10;";
+            $sql = "SELECT `user_name`, (`user_start` - `user_emd` + (`user_points` * 100)) as score FROM `user` WHERE `user_emd` IS NOT NULL ORDER BY score DESC limit 10;";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
