@@ -147,7 +147,9 @@ h6 {
 }
 
 input[type="text"],
-.fileupload {
+.fileupload,
+select,
+textarea {
     padding: 10px;
     font-family: 'basic-sans';
     background-color: #1f382d;
@@ -157,6 +159,10 @@ input[type="text"],
     width: calc(100% - 20px);
     font-size: 16px;
     display: block;
+}
+
+textarea {
+    min-height: 100px;
 }
 
 input[type="file"] {
