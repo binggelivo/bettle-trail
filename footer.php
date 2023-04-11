@@ -20,9 +20,9 @@
             </div>
         </div>
         <br>
-        <p><a href="">Kaputte Posten oder sonstige Probleme?</a></p>
+        <p><a href="/problem" style="color: #feeeca; width: 100%; text-align: center;">Kaputte Posten oder sonstige Probleme?</a></p>
+        <br><br>
     </div>
-
 </body>
 
 <?php
