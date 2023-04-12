@@ -26,20 +26,20 @@ if (isset($_POST["art"])) {
             $filename = $path['filename'];
             $ext = $path['extension'];
             $temp_name = $_FILES['photo']['tmp_name'];
-            $path_filename_ext = $target_dir . $time . "-." . $ext;
+            $path_filename_ext = $target_dir . $time . "." . $ext;
 
             echo "Bilder";
             echo "<br><br>";
             echo "<br><br>";
-            $img = imagescale( $temp_name, 600, -1 );
-            move_uploaded_file($img, $target_dir . $time . "." . $ext);
+            $img = imagescale( $temp_name, 600, -1, IMG_BICUBIC);
+            move_uploaded_file($img, $target_dir . $time . "-." . $ext);
             echo "<br><br>";
             print_r(imagewebp($temp_name, 600, -1, $target_dir . $time . ".webp", -1));
 
             if (file_exists($path_filename_ext)) {
             } else {
                 move_uploaded_file($temp_name, $path_filename_ext);
-                print_r(imagewebp(imagescale( $temp_name, 600, -1 ), $target_dir . $time . ".webp", -1));
+                print_r(imagewebp(imagescale( $temp_name, 600, -1, IMG_BICUBIC), $target_dir . $time . ".webp", -1));
             }
         } else {
             $path_filename_ext = "";
