@@ -29,14 +29,17 @@ if (isset($_POST["art"])) {
             $path_filename_ext = $target_dir . $time . "." . $ext;
 
             echo "Bilder";
-            print_r($temp_name);
-            print_r(imagescale( $temp_name, 600, -1 ));
+            echo "<br><br>";
+            imagepng($temp_name);
+            echo "<br><br>";
+            $img = imagescale( $temp_name, 600, -1 );
+            imagepng($img);
+            echo "<br><br>";
             print_r(imagewebp($temp_name, 600, -1, $target_dir . $time . ".webp", -1));
 
             if (file_exists($path_filename_ext)) {
             } else {
                 move_uploaded_file($temp_name, $path_filename_ext);
-                print_r(imagescale( $temp_name, 600, -1 ));
                 print_r(imagewebp(imagescale( $temp_name, 600, -1 ), $target_dir . $time . ".webp", -1));
             }
         } else {
