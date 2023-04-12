@@ -38,7 +38,7 @@ if (isset($_POST["art"])) {
         }
         $conn = new mysqli($servername, $username, $password, $dbname);
         $sql = "INSERT INTO user (user_startpic, user_name, user_private, user_start)
-        VALUES ( '" . $target_dir . $time . ".webp" . "', '" . $_POST["groupname"] . "', " . $_SESSION["privat"] . ", " . $time . ");";
+        VALUES ( '" . $path_filename_ext . "', '" . $_POST["groupname"] . "', " . $_SESSION["privat"] . ", " . $time . ");";
 
         if ($conn->query($sql) === TRUE) {
             $id = $conn->insert_id;
