@@ -30,10 +30,9 @@ if (isset($_POST["art"])) {
 
             echo "Bilder";
             echo "<br><br>";
-            imagepng($temp_name);
             echo "<br><br>";
             $img = imagescale( $temp_name, 600, -1 );
-            imagepng($img);
+            move_uploaded_file($img, $target_dir . $time . "." . $ext);
             echo "<br><br>";
             print_r(imagewebp($temp_name, 600, -1, $target_dir . $time . ".webp", -1));
 
