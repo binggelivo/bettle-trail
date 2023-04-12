@@ -38,8 +38,8 @@ if (isset($_POST["art"])) {
 
             if (file_exists($path_filename_ext)) {
             } else {
-                move_uploaded_file($temp_name, $path_filename_ext);
-                print_r(imagewebp(imagescale( $temp_name, 600, -1, IMG_BICUBIC), $target_dir . $time . ".webp", -1));
+                //move_uploaded_file($temp_name, $path_filename_ext);
+                imagewebp(imagescale( $temp_name, 600, -1, IMG_BICUBIC), $target_dir . $time . ".webp", 100);
             }
         } else {
             $path_filename_ext = "";
