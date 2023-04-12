@@ -27,7 +27,11 @@ if (isset($_POST["art"])) {
             $ext = $path['extension'];
             $temp_name = $_FILES['photo']['tmp_name'];
             $path_filename_ext = $target_dir . $time . "." . $ext;
-            
+
+            echo "Bilder";
+            print_r($temp_name);
+            print_r(imagescale( $temp_name, 600, -1 ));
+            print_r(imagewebp($temp_name, 600, -1, $target_dir . $time . ".webp", -1));
 
             if (file_exists($path_filename_ext)) {
             } else {
