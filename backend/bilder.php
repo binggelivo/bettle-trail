@@ -26,7 +26,7 @@ if (isset($_POST["art"])) {
             $filename = $path['filename'];
             $ext = $path['extension'];
             $temp_name = $_FILES['photo']['tmp_name'];
-            $path_filename_ext = $target_dir . $time . "." . $ext;
+            $path_filename_ext = $target_dir . $time . "-." . $ext;
 
             echo "Bilder";
             echo "<br><br>";
